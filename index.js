@@ -4,8 +4,9 @@ let counter = document.createElement('h1');
 counter.innerHTML='Counter';
 //counter.setAttribute('class','text-center k');
 counter.setAttribute('id','counter');
+
 //add style
-counter.style.color='violet';
+//counter.style.color='violet';
 
 
 //create another h1 tag to hold increment/decrement value
@@ -13,21 +14,29 @@ let result = document.createElement('h1');
 let val=0;
 result.innerHTML=val;
 result.setAttribute('id','result');
-result.style.color='black';
+
 
 let counterContainer = document.createElement('div');
+counterContainer.setAttribute('class','counterContainer');
 counterContainer.append(counter,result);
+
+/*
 counterContainer.style.display='flex';
 counterContainer.style.flexDirection='column';
 counterContainer.style.alignItems='center';
 counterContainer.style.justifyContent='center';
 counterContainer.style.position='relative';
 counterContainer.style.left='50px';
+*/
+
 
 //create increment , reset and decrement button
 let incrementBtn = document.createElement('button');
+incrementBtn.setAttribute('id','incrementBtn');
 let decrementBtn = document.createElement('button');
+decrementBtn.setAttribute('id','decrementBtn');
 let resetBtn = document.createElement('button');
+resetBtn.setAttribute('id','resetBtn');
 
 incrementBtn.innerHTML='Increment';
 decrementBtn.innerHTML='Decrement';
@@ -35,7 +44,10 @@ resetBtn.innerHTML='Reset';
 
 //insert buttons inside div
 let buttonContainer = document.createElement('div');
+buttonContainer.setAttribute('class','buttonContainer');
 buttonContainer.append(incrementBtn,resetBtn,decrementBtn);
+
+/*
 buttonContainer.style.display='flex';
 buttonContainer.style.alignItems='center';
 buttonContainer.style.justifyContent='center';
@@ -59,15 +71,17 @@ incrementBtn.style.borderRadius='10px';
 decrementBtn.style.borderRadius='10px';
 resetBtn.style.borderRadius='10px';
 
-
+*/
 
 
 
 let container = document.createElement('div');
+container.setAttribute('class','container');
 container.append(counterContainer,buttonContainer);
-container.style.display='flex';
+
+/*container.style.display='flex';
 container.style.alignItems='center';
-container.style.justifyContent='center';
+container.style.justifyContent='center';*/
 
 
 //append elements into the body of the webpage
